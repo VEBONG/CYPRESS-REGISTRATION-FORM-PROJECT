@@ -11,8 +11,8 @@ describe('Registration page', () => {
         const rn = new RegistrationPage();
         rn.LoginButton_click();
         rn.SignupButton_click();
-        rn.TypeSignup_email('zuydatepsu@gufum.com');
-        rn.TypeSignup_password('Automate!321');
+        rn.TypeSignup_email('listacesta@gufum.com');
+        rn.TypeSignup_password('Automate_@321');
         rn.ClickCreateAccount_button();
         rn.Click_CreateNewForm_button();
        
@@ -25,8 +25,8 @@ describe('Registration page', () => {
         cy.visit('https://fs2.formsite.com/meherpavan/form1/index.html', {failOnStatusCode: false});
         const ln = new RegistrationPage();
         ln.LoginButton_click();
-        ln.TypeLoginUsername('zuydatepsu@gufum.com');
-        ln.TypeLoginPassword ('Automate!321')
+        ln.TypeLoginUsername('listacesta@gufum.com');
+        ln.TypeLoginPassword ('Automate_@321')
         ln.Click_RememberMe_button()
         ln.TestLogin_button()
         ln.Click_CreateNewForm_button()
@@ -34,7 +34,7 @@ describe('Registration page', () => {
         // click the Registration form
         ln.SelectRegistrationTemp_button()
         ln.Click_UseThisTemplate()
-        ln.Type_FormName('STP SQA AUTOMATION REGISTRATION FORM')
+        ln.Type_FormName('STP SQA AUTOMATION REGISTRATION FORM 1')
         ln.Click_CreateFormButton()
         ln.Click_ViewFormButton()
 
@@ -53,8 +53,8 @@ describe('Registration page', () => {
     it('Fill form and submit', () => {
         const fm = new RegistrationPage();
         fm.Fill_Form()
-        fm.Fill_NameField('EBONG, UKAM')
-        fm.Fill_EmailField('zuydatepsu@gufum.com')
+        fm.Fill_NameField('EBONG, UKAM KEADE')
+        fm.Fill_EmailField('listacesta@gufum.com')
         fm.Fill_PhoneNo('07012881287')
         fm.Select_ContactMethod()
         fm.Select_CheckBoxes()

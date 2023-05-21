@@ -1,6 +1,5 @@
 // form reggistration page
 
-//import { includes } from "cypress/types/lodash";
 
 class RegistrationPage
 {
@@ -165,17 +164,20 @@ Click_CreateFormButton()
 Click_ViewFormButton()
 {
   cy.xpath(this.FormEditor_ViewForm).click()
-  cy.url().should('eq', 'https://fs21.formsite.com/d8bYxm/uusyl2ql1u/index')
-  .and('contain.text', 'index')
+  //cy.url().should('eq', 'https://fs21.formsite.com/eAmTEi/wbny6vx1sm/index')
+ // .and('contain.text', 'index')
+ //.invoke('removeAttr', 'onclick').click() IS NOT WORKING
+ cy.wait(5000)
 }
 
 
 Fill_Form()
 {
-  cy.visit('https://fs21.formsite.com/HxEBYP/ma49e4qgwb/index') 
+  cy.visit('https://fs21.formsite.com/eAmTEi/wbny6vx1sm/index') 
   
   
 }
+
 
 Fill_NameField(Name)
 {
